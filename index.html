@@ -1,0 +1,141 @@
+<html>
+<head>
+  <title>Geo-Location Finder
+  </title>
+  <link rel="stylesheet" href="https://bootswatch.com/united/bootstrap.min.css">
+  <script   src="https://code.jquery.com/jquery-3.1.1.min.js"   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="   crossorigin="anonymous"></script>
+   <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+   <script src="main.js"></script>
+
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+   <style>
+          #map {
+           height: 400px;
+           width: 100%;
+          }
+       </style>
+</head>
+<body>
+
+
+<nav class="navbar navbar-default">
+  <div class="container">
+<div class="navbar-header">
+  <a class="navbar-brand" href="index.html">Geo-Location Finder</a>
+
+</div>
+</div>
+</nav>
+
+
+<div class="container">
+<div class="jumbotron">
+
+<form id="search">
+<h3>Type any address existing on the earth..</h3>
+<input type="text" placeholder="Search for any place here..." class="form-control" id="searchBox">
+</form>
+
+</div>
+</div>
+
+<h3 align="center"> Or </h3>
+
+<br>
+<br>
+
+
+
+<div class="container">
+
+<div class="jumbotron">
+  <h3>Using Longitude and Latitude</h3>
+
+  <form id="search1">
+  <div class="row">
+    <div class="col-sm-6"><h3 align="center">Latitude :</h3>
+
+
+      <input type="text" placeholder="Put Latitude Here : " class="form-control" id="searchLat">
+
+
+
+    </div>
+    <div class="col-sm-6"><h3 align="center">Longitude :</h3>
+
+
+      <input type="text" placeholder="Put Longitude Here : " class="form-control" id="searchLong">
+
+
+
+    </div>
+  </div>
+  <br>
+  <button align="center" type="submit" val="submit" class="btn btn-primary" id="submit">Submit</button>
+</form>
+
+
+
+</div>
+</div>
+
+
+
+<br>
+<br>
+
+
+
+<div class="container">
+  <div id="details" class="row"></div>
+</div>
+<div class="container">
+  <div id="details2" class="row"></div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-6">
+<h3> Address :</h3>
+<h4> Flat No 406,B Block</h4>
+<h4>Southern Avenue,VGN Flats,Potheri</h4>
+<h4>Chennai,Tamil Nadu,Postal Code : 603203</h4>
+<br>
+<h3> Contact No. </h3><h4> 8124669828</h4>
+<h3> Whatsapp No. </h3><h4> 7404442229</h4>
+
+
+
+    </div>
+      <div class="col-sm-6">
+<div id="map"></div></div></div></div>
+
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCVJmrU7SX8Qf24SDRywti3-N8_EYAPdIU&callback=initMap">
+    </script>
+
+<br>
+<br>
+
+
+  <div class="container">
+    <div class="row">
+      <div class="span12">
+        <div id="footer">
+          <ul class="footer">
+            <li>© WebApp built by <a href="http://www.iamsid.cf" target="_blank">Shubham Dhingra</a></li>
+            <li>Email: shbhmdhngr@gmail.com</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+</body>
+</html>
